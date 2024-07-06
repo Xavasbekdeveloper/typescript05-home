@@ -1,0 +1,47 @@
+footer {
+  padding: 60px 0 80px;
+  background: #0f0f0f;
+}
+.footer__wrapper {
+}
+.footer__wrapper__top-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__wrapper__top-part__title {
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.footer__wrapper__top-part__liner {
+  margin-bottom: 40px;
+  width: 120px;
+  height: 1px;
+  background: #fff;
+}
+.footer__wrapper__bottom-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 940px) {
+  .footer__wrapper__top-part__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .footer__wrapper__bottom-part {
+    justify-content: center;
+  }
+  .footer__wrapper__top-part__title {
+    font-size: 24px;
+  }
+}

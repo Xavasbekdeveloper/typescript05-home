@@ -1,0 +1,183 @@
+.header__top {
+  padding: 15px 0;
+  background: #000;
+}
+.header__top__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header__top__wrapper__left-part {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header__top__wrapper__left-part__text {
+  color: #969696;
+  font-size: 12px;
+  font-weight: 400;
+}
+.header__top__wrapper__right-part__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: transparent;
+  color: #969696;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .header__top__wrapper__right-part {
+    display: none;
+  }
+  .header__top__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .header__top__wrapper__left-part__text {
+    font-size: 12px;
+  }
+  .nav__wrapper__logo__link__img {
+    width: 95px;
+  }
+}
+@media (max-width: 380px) {
+  .header__top__wrapper__left-part__text {
+    font-size: 10px;
+  }
+  .nav__wrapper__logo__link__img {
+    width: 85px;
+  }
+}
+@media (max-width: 330px) {
+  .header__top {
+    display: none;
+  }
+}
+/* ---- TOP HEADER END ---- */
+
+/*---- HEADER NAVBAR START ----*/
+nav {
+  padding: 24.3px 0;
+  background: #0f0f0f;
+}
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__wrapper__box {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__list__item__link {
+  padding: 31px 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: ease 0.5s all;
+}
+.nav__list__item__link:hover {
+  padding: 31px 20px;
+  background: #1f1f1f;
+}
+.nav__wrapper__box__btns {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav__wrapper__box__btns__btn {
+  background-color: transparent;
+  border: transparent;
+}
+.btn-menu {
+  display: none;
+}
+@media (max-width: 750px) {
+  .nav__list__item__link {
+    padding: 21px 10px;
+  }
+  .nav__list__item__link:hover {
+    padding: 21px 10px;
+  }
+  .nav__wrapper__box {
+    gap: 20px;
+  }
+}
+@media (max-width: 620px) {
+  .site__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #00000068;
+    z-index: -111111;
+    opacity: 0;
+  }
+  .site__overlay-show {
+    z-index: 1;
+    opacity: 1;
+  }
+  .nav__list {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 99;
+    background-color: #000;
+    width: 60%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    gap: 50px;
+  }
+  .nav__menu-show {
+    left: 0;
+  }
+  .btn-menu {
+    display: block;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  nav {
+    padding: 15px 0;
+    background: #0f0f0f;
+  }
+  .nav__wrapper__logo__link {
+    img {
+      width: 90px;
+      height: 20px;
+    }
+  }
+  .nav__wrapper__box__btns {
+    gap: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .nav__list {
+    width: 80%;
+  }
+}
+@media (max-width: 350px) {
+  .nav__wrapper__box__btns__btn {
+    display: none;
+  }
+  .btn-menu {
+    display: block;
+  }
+}
+/* ---- HEADER NAVBAR START ---- */

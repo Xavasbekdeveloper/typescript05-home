@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "PT Sans", sans-serif;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+.container {
+  width: 100%;
+  max-width: 1142px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.container-max {
+  width: 100%;
+  max-width: 2560px;
+  margin: 0 auto;
+}
